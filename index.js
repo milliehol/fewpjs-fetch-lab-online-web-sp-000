@@ -5,7 +5,6 @@ function fetchBooks() {
       return response.json();
     }).then(function(json) {
       console.log(json);
-      console.log(`Holy cow! There are ${json["number"]} humans in space.`);
     });
 
 }
