@@ -1,12 +1,8 @@
 function fetchBooks() {
   
-      fetch('http://api.open-notify.org/astros.json')
-    .then(function(response) {
-      return response.json();
-    }).then(function(json) {
-      console.log(json);
-    });
-
+        fetch('https://anapioficeandfire.com/api/books')
+      .then(resp => resp.json())
+      .then(json => console.log(json));
 }
 
 function renderBooks(json) {
